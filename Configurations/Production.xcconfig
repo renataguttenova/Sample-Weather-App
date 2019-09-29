@@ -1,0 +1,15 @@
+//
+//  Production.xcconfig
+//  SampleWeatherApp
+//
+//  Created by Renata Guttenová on 29/09/2019.
+//  Copyright © 2019 Renata Guttenová. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_BUNDLE_NAME = TestProject
+APP_BUNDLE_IDENTIFIER = enterprise.com.TestProject
+
+API_BASE_URL = https:/$()/api.openweathermap.org
