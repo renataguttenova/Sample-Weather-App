@@ -1,0 +1,43 @@
+disabled_rules:
+- trailing_whitespace
+- line_length
+- trailing_comma
+
+#
+# Paths to ignore during linting. Takes precedence over `included`.
+#
+excluded:
+- Carthage
+- Pods
+- Tests
+- Vendor
+- Scripts
+- fastlane
+- R.generated.swift
+
+#
+# Configure individual rules below.
+#
+
+line_length:
+- ignores_function_declarations: yes
+- ignores_comments: yes
+- ignores_urls: yes
+- error: 300
+- warning: 200
+
+line_length:
+- error: 300
+- warning: 200
+
+function_body_length:
+error: 150
+warning: 100
+
+type_body_length:
+error: 900
+warning: 600
+
+file_length:
+error: 1000
+warning: 700

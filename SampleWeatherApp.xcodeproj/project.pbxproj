@@ -137,7 +137,6 @@
 				55EC05C5C84B348E2A8E6F98 /* Pods-SampleWeatherApp-SampleWeatherAppUITests.release development.xcconfig */,
 				9570A6F8BE86C39098BBBF91 /* Pods-SampleWeatherApp-SampleWeatherAppUITests.release production.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,6 +228,8 @@
 				940EF3E52340C83B00D7AB59 /* Frameworks */,
 				940EF3E62340C83B00D7AB59 /* Resources */,
 				49BC7262B2F4E598BB582B70 /* [CP] Embed Pods Frameworks */,
+				940EF4262340D48100D7AB59 /* Run Script - Swiftformat */,
+				940EF4272340D4B900D7AB59 /* Run Script - SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -416,7 +417,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleWeatherApp/Pods-SampleWeatherApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+		};
+		940EF4262340D48100D7AB59 /* Run Script - Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Swiftformat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "podSwiftformat=\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\"\n\nif [ -f \"$podSwiftformat\" ]; \nthen $podSwiftformat .\nelse\necho \"warning: Cannot find SwiftFormat in the expected Cocoapods location.\"\nfi\n";
+		};
+		940EF4272340D4B900D7AB59 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		DB4933CD34F32822247C143E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
