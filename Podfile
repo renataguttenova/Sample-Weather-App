@@ -9,6 +9,7 @@ target 'SampleWeatherApp' do
   pod 'SwiftLint', '~> 0.30.1'
   pod 'SwiftFormat/CLI', '~> 0.38.0'
   pod 'AlamofireImage', '~> 3.5'
+  pod 'SwiftyJSON'
   
   # Tests
   

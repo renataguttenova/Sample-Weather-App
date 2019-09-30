@@ -11,5 +11,4 @@
 
 APP_BUNDLE_NAME = TestProject
 APP_BUNDLE_IDENTIFIER = enterprise.com.TestProject
-
 API_BASE_URL = https:/$()/api.openweathermap.org
